@@ -1,0 +1,91 @@
+apply plugin: 'com.android.application'
+
+def releaseTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion '21.1.2'
+
+    defaultConfig {
+        applicationId "com.dexafree.materiallistviewexample"
+        minSdkVersion 13
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+        // dex突破65535的限制
+        multiDexEnabled true
+        // 默认是umeng的渠道
+        manifestPlaceholders = [UMENG_CHANNEL_VALUE: "umeng"]
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+    signingConfigs {
+        debug {
+            // No debug config
+        }
+
+        release {
+            storeFile file("E:/Android Studio/publish/shlsy.jks")
+            storePassword "sghd1225"
+            keyAlias "shlsy"
+            keyPassword "sghd1225"
+        }
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.debug
+        }
+        release {
+            //minifyEnabled
+            minifyEnabled true
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        // 输出apk名称为Past_v1.0_2015-01-15_wandoujia.apk
+                        def fileName = "Past_v${defaultConfig.versionName}_${releaseTime()}_${variant.productFlavors[0].name}.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+        }
+
+    }
+    productFlavors {
+        wandoujia {}
+        _360 {}
+        baidu {}
+        xiaomi {}
+        tencent {}
+        _91 {}
+        anzhi {}
+    }
+    productFlavors.all { flavor ->
+        flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+}
+
+dependencies {
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':materialList')
+    //compile 'com.github.dexafree:materiallist:2.1.1'
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile  project(':Floatlibrary')
+    compile 'com.rengwuxian.materialedittext:library:2.1.3'
+    compile 'com.github.navasmdc:MaterialDesign:1.5@aar'
+    compile 'com.github.flavienlaurent.datetimepicker:library:0.0.2'
+}
