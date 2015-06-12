@@ -18,6 +18,7 @@ import java.util.Date;
 
 import Bean.SinceBean;
 import Utils.CalendarUtils;
+import Utils.ThemeUtil;
 
 
 public class ModifyActivity extends FragmentActivity implements DatePickerDialog.OnDateSetListener {
@@ -32,6 +33,7 @@ public class ModifyActivity extends FragmentActivity implements DatePickerDialog
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ThemeUtil.SetTheme(this, MainActivity.defaultcolor);
         setContentView(R.layout.modify);
         InitViews();
         SetListeners();

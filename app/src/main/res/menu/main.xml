@@ -6,7 +6,9 @@
     <item android:id="@+id/action_clear"
         android:title="CLEAR"
         app:showAsAction="never" />
-
+    <item android:id="@+id/action_theme"
+        android:title="Theme"
+        app:showAsAction="never" />
 
 
 </menu>

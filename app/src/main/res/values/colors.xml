@@ -12,4 +12,11 @@
     <color name="cyan_500">#00bcd4</color>
     <color name="indigo_500">#3f51b5</color>
     <color name="indigo_700">#303f9f</color>
+
+    <color name="theme1">@color/indigo_500</color>
+    <color name="theme2">#009688</color>
+    <color name="theme3">#E91E63</color>
+    <color name="theme4">#9C27B0</color>
+    <color name="theme5">#00BCD4</color>
+    <color name="theme6">#CDDC39</color>
 </resources>

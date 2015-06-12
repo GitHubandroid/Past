@@ -21,6 +21,7 @@ import java.util.Date;
 
 import Bean.SinceBean;
 import Utils.CalendarUtils;
+import Utils.ThemeUtil;
 
 
 public class AddActivity extends FragmentActivity implements DatePickerDialog.OnDateSetListener {
@@ -34,6 +35,7 @@ public class AddActivity extends FragmentActivity implements DatePickerDialog.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ThemeUtil.SetTheme(this,MainActivity.defaultcolor);
         setContentView(R.layout.create);
         getActionBar().setDisplayShowHomeEnabled(false);
         getActionBar().setDisplayHomeAsUpEnabled(true);

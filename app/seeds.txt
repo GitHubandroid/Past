@@ -1,4 +1,5 @@
 Bean.SinceBean
+android.support.multidex.MultiDexApplication
 android.support.v4.app.BackStackState
 android.support.v4.app.BackStackState: android.os.Parcelable$Creator CREATOR
 android.support.v4.app.DialogFragment
@@ -3800,6 +3801,7 @@ com.dexafree.materiallistviewexample.R$drawable: int ic_launcher
 com.dexafree.materiallistviewexample.R$drawable: int ic_reloj_max
 com.dexafree.materiallistviewexample.R$drawable: int met_ic_clear
 com.dexafree.materiallistviewexample.R$drawable: int notification_template_icon_bg
+com.dexafree.materiallistviewexample.R$drawable: int past
 com.dexafree.materiallistviewexample.R$drawable: int photo
 com.dexafree.materiallistviewexample.R$drawable: int shadow_down
 com.dexafree.materiallistviewexample.R$drawable: int shadow_right

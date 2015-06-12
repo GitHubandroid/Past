@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">Past</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="dialog_title">选择主题</string>
     <string name="action_settings">Settings</string>
     <string name="app_description">幸福那么短，回忆那么长</string>
     <string name="title_activity_since">SinceActivity</string>

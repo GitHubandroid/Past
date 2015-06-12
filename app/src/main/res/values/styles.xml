@@ -5,19 +5,68 @@
         <item name="android:background">@drawable/fab_label_background</item>
         <item name="android:textColor">@color/white</item>
     </style>
+
     <style name="CustomActionBarTheme" parent="@android:style/Theme.Holo.Light">
         <item name="android:actionBarStyle">@style/MyActionBar</item>
         <item name="colorPrimary">@color/indigo_500</item>
-        <item name="colorPrimaryDark">@color/indigo_700</item>
-        <item name="android:windowContentOverlay">@null</item>
         <item name="colorAccent">@color/cyan_500</item>
+        <item name="android:windowContentOverlay">@null</item>
     </style>
 
     <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
-        <item name="android:background">#3f51b5</item>
+        <item name="android:background">?colorPrimary</item>
         <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
     </style>
+
     <style name="MyActionBarTitleText" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
         <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="CustomTheme1" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="colorPrimary">@color/indigo_500</item>
+        <item name="colorAccent">@color/cyan_500</item>
+        <item name="actionbar_color">@color/indigo_500</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="CustomTheme2" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="colorPrimary">#009688</item>
+        <item name="actionbar_color">#009688</item>
+        <item name="colorAccent">@color/cyan_500</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="CustomTheme3" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="colorPrimary">#E91E63</item>
+        <item name="colorAccent">@color/cyan_500</item>
+        <item name="actionbar_color">#E91E63</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="CustomTheme4" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="actionbar_color">#9C27B0</item>
+        <item name="colorAccent">@color/cyan_500</item>
+        <item name="colorPrimary">#9C27B0</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="CustomTheme5" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="actionbar_color">#00BCD4</item>
+        <item name="colorPrimary">#00BCD4</item>
+        <item name="colorAccent">@color/cyan_500</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="CustomTheme6" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="actionbar_color">#CDDC39</item>
+        <item name="colorPrimary">#CDDC39</item>
+        <item name="colorAccent">@color/cyan_500</item>
+        <item name="android:windowContentOverlay">@null</item>
     </style>
 </resources>

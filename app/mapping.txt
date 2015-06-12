@@ -72,6 +72,60 @@ ViewInterface.SinceInterface -> f.a:
     void Share() -> b
     void Modify(Bean.SinceBean) -> a
     void Display(java.util.ArrayList) -> a
+android.support.multidex.MultiDex -> android.support.multidex.a:
+    java.lang.String SECONDARY_FOLDER_NAME -> a
+    java.util.Set installedApk -> b
+    boolean IS_VM_MULTIDEX_CAPABLE -> c
+    void install(android.content.Context) -> a
+    android.content.pm.ApplicationInfo getApplicationInfo(android.content.Context) -> b
+    boolean isVMMultidexCapable(java.lang.String) -> a
+    void installSecondaryDexes(java.lang.ClassLoader,java.io.File,java.util.List) -> a
+    boolean checkValidZipFiles(java.util.List) -> a
+    java.lang.reflect.Field findField(java.lang.Object,java.lang.String) -> b
+    java.lang.reflect.Method findMethod(java.lang.Object,java.lang.String,java.lang.Class[]) -> b
+    void expandFieldArray(java.lang.Object,java.lang.String,java.lang.Object[]) -> b
+    void clearOldDexDir(android.content.Context) -> c
+    java.lang.reflect.Field access$300(java.lang.Object,java.lang.String) -> a
+    void access$400(java.lang.Object,java.lang.String,java.lang.Object[]) -> a
+    java.lang.reflect.Method access$500(java.lang.Object,java.lang.String,java.lang.Class[]) -> a
+android.support.multidex.MultiDex$V14 -> android.support.multidex.b:
+    void install(java.lang.ClassLoader,java.util.List,java.io.File) -> b
+    java.lang.Object[] makeDexElements(java.lang.Object,java.util.ArrayList,java.io.File) -> a
+    void access$100(java.lang.ClassLoader,java.util.List,java.io.File) -> a
+android.support.multidex.MultiDex$V19 -> android.support.multidex.c:
+    void install(java.lang.ClassLoader,java.util.List,java.io.File) -> b
+    java.lang.Object[] makeDexElements(java.lang.Object,java.util.ArrayList,java.io.File,java.util.ArrayList) -> a
+    void access$000(java.lang.ClassLoader,java.util.List,java.io.File) -> a
+android.support.multidex.MultiDex$V4 -> android.support.multidex.d:
+    void install(java.lang.ClassLoader,java.util.List) -> b
+    void access$200(java.lang.ClassLoader,java.util.List) -> a
+android.support.multidex.MultiDexApplication -> android.support.multidex.MultiDexApplication:
+    void attachBaseContext(android.content.Context) -> attachBaseContext
+android.support.multidex.MultiDexExtractor -> android.support.multidex.e:
+    java.lang.reflect.Method sApplyMethod -> a
+    java.util.List load(android.content.Context,android.content.pm.ApplicationInfo,java.io.File,boolean) -> a
+    java.util.List loadExistingExtractions(android.content.Context,java.io.File,java.io.File) -> a
+    boolean isModified(android.content.Context,java.io.File,long) -> a
+    long getTimeStamp(java.io.File) -> b
+    long getZipCrc(java.io.File) -> c
+    java.util.List performExtractions(java.io.File,java.io.File) -> a
+    void putStoredApkInfo(android.content.Context,long,long,int) -> a
+    android.content.SharedPreferences getMultiDexPreferences(android.content.Context) -> a
+    void prepareDexDir(java.io.File,java.lang.String) -> a
+    void extract(java.util.zip.ZipFile,java.util.zip.ZipEntry,java.io.File,java.lang.String) -> a
+    boolean verifyZipFile(java.io.File) -> a
+    void closeQuietly(java.io.Closeable) -> a
+    void apply(android.content.SharedPreferences$Editor) -> a
+android.support.multidex.MultiDexExtractor$1 -> android.support.multidex.f:
+    java.lang.String val$extractedFilePrefix -> a
+    boolean accept(java.io.File) -> accept
+android.support.multidex.ZipUtil -> android.support.multidex.g:
+    long getZipCrc(java.io.File) -> a
+    android.support.multidex.ZipUtil$CentralDirectory findCentralDirectory(java.io.RandomAccessFile) -> a
+    long computeCrcOfCentralDir(java.io.RandomAccessFile,android.support.multidex.ZipUtil$CentralDirectory) -> a
+android.support.multidex.ZipUtil$CentralDirectory -> android.support.multidex.h:
+    long offset -> a
+    long size -> b
 android.support.v4.app.ActivityCompat -> android.support.v4.app.a:
     void finishAffinity(android.app.Activity) -> a
     void finishAfterTransition(android.app.Activity) -> b

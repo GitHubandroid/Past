@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Floatlibrary/Floatlibrary.iml" filepath="$PROJECT_DIR$/Floatlibrary/Floatlibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/Since-master.iml" filepath="$PROJECT_DIR$/Since-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/colorpickerlibrary/colorpickerlibrary.iml" filepath="$PROJECT_DIR$/colorpickerlibrary/colorpickerlibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/materialList/materialList.iml" filepath="$PROJECT_DIR$/materialList/materialList.iml" />
     </modules>
   </component>
